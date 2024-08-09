@@ -21,7 +21,7 @@ class _crawl:
 
         self._bus = requests.get(
             "https://github.andy-lu.dev/hide_api/taipei_bus.json"
-        ).json()
+        ).json()['features']
 
         
 

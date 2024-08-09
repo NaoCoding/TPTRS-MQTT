@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '../ui/_lang.ui'
+# Form implementation generated from reading ui file './ui/_lang.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.11
 #
@@ -9,7 +9,7 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-import _folium , _userSetting
+import _userSetting , _folium
 
 
 class Ui_MainWindow(object):
@@ -22,32 +22,70 @@ class Ui_MainWindow(object):
 
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.setFixedSize(766, 318)
+        MainWindow.resize(785, 318)
         MainWindow.setStyleSheet("")
+        #MainWindow.setWindowFlags(QtCore.Qt.FramelessWindowHint)
+        #MainWindow.setAttribute(QtCore.Qt.WA_TranslucentBackground)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setAutoFillBackground(True)
         self.centralwidget.setObjectName("centralwidget")
         self.pushButton = QtWidgets.QPushButton(self.centralwidget , clicked = lambda : self.select_("en"))
         self.pushButton.setGeometry(QtCore.QRect(270, 180, 231, 91))
-        self.pushButton.setStyleSheet("font: 28pt \"Calibri\";")
+        self.pushButton.setStyleSheet("font: 28pt \"Calibri\";\n"
+"background-color: rgba(0, 0, 0,0);\n"
+"border:none;\n"
+"border-bottom: 2px solid rgba(105,118,132,255);\n"
+"color:rgba(0,0,0,230);\n"
+"padding-bottom:7px;\n"
+"")
         self.pushButton.setObjectName("pushButton")
         self.pushButton_2 = QtWidgets.QPushButton(self.centralwidget , clicked = lambda : self.select_("jp"))
         self.pushButton_2.setGeometry(QtCore.QRect(20, 180, 231, 91))
-        self.pushButton_2.setStyleSheet("font: 28pt \"標楷體\";")
+        self.pushButton_2.setStyleSheet("font: 28pt \"標楷體\";\n"
+"background-color: rgba(0, 0, 0,0);\n"
+"border:none;\n"
+"border-bottom: 2px solid rgba(105,118,132,255);\n"
+"color:rgba(0,0,0,230);\n"
+"padding-bottom:7px;\n"
+"")
         self.pushButton_2.setObjectName("pushButton_2")
-        self.pushButton_3 = QtWidgets.QPushButton(self.centralwidget , clicked = lambda : self.select_("zh-tw"))
+        self.pushButton_3 = QtWidgets.QPushButton(self.centralwidget ,
+                                                  clicked = lambda : self.select_("zh-tw"))
         self.pushButton_3.setGeometry(QtCore.QRect(520, 180, 231, 91))
         self.pushButton_3.setStyleSheet("font: 28pt \"標楷體\";\n"
+"background-color: rgba(0, 0, 0,0);\n"
+"border:none;\n"
+"border-bottom: 2px solid rgba(105,118,132,255);\n"
+"color:rgba(0,0,0,230);\n"
+"padding-bottom:7px;\n"
 "")
         self.pushButton_3.setObjectName("pushButton_3")
         self.label = QtWidgets.QLabel(self.centralwidget)
         self.label.setGeometry(QtCore.QRect(230, 70, 301, 71))
         font = QtGui.QFont()
-        font.setFamily("Candara")
+        font.setFamily("Calibri")
         font.setPointSize(28)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
         self.label.setFont(font)
+        self.label.setStyleSheet("font: 28pt \"Calibri\";\n"
+"background-color: rgba(0, 0, 0,0);\n"
+"border:none;\n"
+"color:rgba(0,0,0,230);\n"
+"")
         self.label.setAlignment(QtCore.Qt.AlignCenter)
         self.label.setObjectName("label")
+        self.widget = QtWidgets.QWidget(self.centralwidget)
+        self.widget.setGeometry(QtCore.QRect(10, 10, 761, 301))
+        self.widget.setStyleSheet("background-color: qlineargradient(spread:pad, x1:0.517, y1:0.505682, x2:0.512, y2:1, stop:0 rgba(194, 194, 194, 255), stop:1 rgba(255, 255, 255, 255));\n"
+"border-radius:40px;")
+        self.widget.setObjectName("widget")
+        self.widget.raise_()
+        self.pushButton.raise_()
+        self.pushButton_2.raise_()
+        self.pushButton_3.raise_()
+        self.label.raise_()
         MainWindow.setCentralWidget(self.centralwidget)
         self.actionService = QtWidgets.QAction(MainWindow)
         self.actionService.setObjectName("actionService")
@@ -69,6 +107,7 @@ class Ui_MainWindow(object):
         self.actionService.setText(_translate("MainWindow", "Service"))
         self.actionSetting.setText(_translate("MainWindow", "Setting"))
         self.actionExit.setText(_translate("MainWindow", "Exit"))
+
 
 
 if __name__ == "__main__":

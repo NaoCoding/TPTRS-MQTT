@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>766</width>
+    <width>785</width>
     <height>318</height>
    </rect>
   </property>
@@ -30,7 +30,13 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 28pt &quot;Calibri&quot;;</string>
+     <string notr="true">font: 28pt &quot;Calibri&quot;;
+background-color: rgba(0, 0, 0,0);
+border:none;
+border-bottom: 2px solid rgba(105,118,132,255);
+color:rgba(0,0,0,230);
+padding-bottom:7px;
+</string>
     </property>
     <property name="text">
      <string>English</string>
@@ -46,7 +52,13 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 28pt &quot;標楷體&quot;;</string>
+     <string notr="true">font: 28pt &quot;標楷體&quot;;
+background-color: rgba(0, 0, 0,0);
+border:none;
+border-bottom: 2px solid rgba(105,118,132,255);
+color:rgba(0,0,0,230);
+padding-bottom:7px;
+</string>
     </property>
     <property name="text">
      <string>日本語</string>
@@ -63,6 +75,11 @@
     </property>
     <property name="styleSheet">
      <string notr="true">font: 28pt &quot;標楷體&quot;;
+background-color: rgba(0, 0, 0,0);
+border:none;
+border-bottom: 2px solid rgba(105,118,132,255);
+color:rgba(0,0,0,230);
+padding-bottom:7px;
 </string>
     </property>
     <property name="text">
@@ -80,9 +97,19 @@
     </property>
     <property name="font">
      <font>
-      <family>Candara</family>
+      <family>Calibri</family>
       <pointsize>28</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 28pt &quot;Calibri&quot;;
+background-color: rgba(0, 0, 0,0);
+border:none;
+color:rgba(0,0,0,230);
+</string>
     </property>
     <property name="text">
      <string>Select Language</string>
@@ -91,6 +118,25 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>761</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0.517, y1:0.505682, x2:0.512, y2:1, stop:0 rgba(194, 194, 194, 255), stop:1 rgba(255, 255, 255, 255));
+border-radius:40px;</string>
+    </property>
+   </widget>
+   <zorder>widget</zorder>
+   <zorder>pushButton</zorder>
+   <zorder>pushButton_2</zorder>
+   <zorder>pushButton_3</zorder>
+   <zorder>label</zorder>
   </widget>
   <action name="actionService">
    <property name="text">
@@ -108,6 +154,8 @@
    </property>
   </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="_langres.qrc"/>
+ </resources>
  <connections/>
 </ui>
