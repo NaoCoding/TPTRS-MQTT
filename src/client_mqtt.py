@@ -26,7 +26,7 @@ class _client:
 
     def on_message(self , client, userdata, msg):
         message = str(msg.payload, encoding='utf8')
-        s = message
+        #print(message)
 
     def action(self , msg):
         self.client.publish(self.to_server, msg, 0)

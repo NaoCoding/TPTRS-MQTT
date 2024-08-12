@@ -119,6 +119,7 @@ class Folium_map(QWidget):
 
 
 class WebEnginePage(QWebEnginePage):
+    
     def __init__(self, parent):
         super().__init__(parent)
         self.parent = parent            
