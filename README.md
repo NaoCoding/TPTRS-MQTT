@@ -6,8 +6,8 @@ The default setting of the MQTT broker located at **NTNU**(National Taiwan Norma
 
 ---
 
-### Functions
+### PyQt5
 
-- [x] **PyQt5** WebEngine + **Folium** Map
-- [x] Support **Traditional Chinese**、**English**、**Japanese + English**；
-- [x] **MQTT** clients and server.
+- [x] **Web Engine** for interacting Folium Map
+- [x] Graphic Interface for better experience
+
