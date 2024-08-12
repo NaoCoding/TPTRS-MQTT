@@ -8,6 +8,15 @@ To run the server with your own MQTT broker, edit the IP address in **server.py*
 
 ---
 
+### Functions
+
+- [x] Check current (**real-time**) **UBike** parking space and available bikes.
+- [x] Calculate nearest **UBike/Bus/MRT** stations in crow-flight distance.
+- [x] Interactive Map for searching stations in **Taipei City** and **New Taipei City**
+- [x] User-Friendly GUI 
+
+---
+
 ### PyQt5
 
 - [x] **Web Engine** for interacting Folium Map
@@ -24,4 +33,13 @@ To run the server with your own MQTT broker, edit the IP address in **server.py*
 
 - [x] MQTT server for clients to interact data
 - [x] Support localhost and MQTT brokers
+
+
+---
+
+## Screenshots
+
+![image](https://github.com/user-attachments/assets/41df070b-00a8-439c-a411-a16bf7575e75)
+![image](https://github.com/user-attachments/assets/56658b24-2a7c-443e-9c37-8d789157fba1)
+
 
