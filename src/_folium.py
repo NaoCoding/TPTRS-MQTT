@@ -10,7 +10,7 @@ import folium
 import web_crawler
 import json
 import sys , io , os
-import _userSetting
+import _userSetting , client_mqtt
 
 
 class Folium_map(QWidget):
@@ -127,6 +127,7 @@ class WebEnginePage(QWebEnginePage):
         if 'coordinates' in msg:
             _userSetting._setting._coord = json.loads(msg)['coordinates']
             #print(_userSetting._setting._coord)
+            client_mqtt._mqtt.action(f"{_userSetting._setting._coord['lat']},{_userSetting._setting._coord['lng']}")
             pass
 
 
