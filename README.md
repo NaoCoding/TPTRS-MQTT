@@ -5,3 +5,9 @@ The default setting of the MQTT broker located at **NTNU**(National Taiwan Norma
 <br> To run the server with your own MQTT broker, edit the IP address in **server.py** and **client_mqtt.py**.
 
 ---
+
+### Functions
+
+- [x] **PyQt5** WebEngine + **Folium** Map
+- [x] Support **Traditional Chinese**、**English**、**Japanese + English**；
+- [x] **MQTT** clients and server.
