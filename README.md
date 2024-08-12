@@ -9,5 +9,17 @@ To run the server with your own MQTT broker, edit the IP address in **server.py*
 ### PyQt5
 
 - [x] **Web Engine** for interacting Folium Map
-- [x] Graphic Interface for better experience
+- [x] Graphic User Interface for better experience
+- [x] Select Language options for different language users ( **English** , **Traditional Chinese** , **Japanese**(partial) )
+
+ ### Folium
+
+ - [x] Support **OpenStreetMap** and other tiles.
+ - [x] automatically generate markers from real-time api data
+ - [x] MarkerCluster and markers for **MRT**, **bus**, and **Ubike** stations
+
+### MQTT
+
+- [x] MQTT server for clients to interact data
+- [x] Support localhost and MQTT brokers
 
