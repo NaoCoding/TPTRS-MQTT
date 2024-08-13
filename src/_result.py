@@ -89,7 +89,7 @@ class Ui_MainWindow(object):
 
         for i in range(3):
               self.MRT_ += (self._crawl._mrt[self.index[0][i]][2] if _userSetting._setting._lang == "zh-tw"
-                         else self._crawl._mrt[self.index[0][i]][3]) + "         " + (self._crawl._mrt[self.index[0][i]][5]
+                         else self._crawl._mrt[self.index[0][i]][3]) + "         " + (self._crawl._mrt[self.index[0][i]][5] + "\n"
                                       if _userSetting._setting._lang == "zh-tw"
                                       else self._crawl._mrt[self.index[0][i]][4] + " Line\n")
 
