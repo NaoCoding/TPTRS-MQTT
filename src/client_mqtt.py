@@ -1,7 +1,7 @@
 import paho.mqtt.client as mqtt
 import ssl
 import struct
-import time , _result
+import time , _result , _userSetting
 import sys 
 from multiprocessing import Process
 #import threading , multiprocessing
@@ -41,7 +41,7 @@ class _client:
             self._resulting.terminate()
 
 
-        prc = Process(target = _result.OnResult , args=(message,))
+        prc = Process(target = _result.OnResult , args=(message,_userSetting._setting._lang,))
         self._resulting = prc
         prc.start()
         
