@@ -84,8 +84,8 @@ class Folium_map(QWidget):
                 location = [_stations['latitude'] , _stations['longitude']],
                 popup = (_stations['sna'] if _userSetting._setting._lang == "zh-tw"
                          else _stations['snaen']),
-                tooltip = ("Available Bikes :" + str(_stations['available_rent_bikes'])
-                            + "\n" + "Return spaces :" + str(_stations['available_return_bikes'])),
+                tooltip = ("Available Bikes : " + str(_stations['available_rent_bikes'])
+                            + "\n" + "Return spaces : " + str(_stations['available_return_bikes'])),
                 icon = folium.Icon(color = "red", prefix = "fa-solid fa-bicycle",
                                   )
             ).add_to(_foliumMarkerCluster)

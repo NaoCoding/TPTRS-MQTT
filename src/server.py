@@ -78,6 +78,7 @@ def _UBIKE_(lat , lng):
 
     for i in range(len(data)):
 
+        
 
         if _dist(lat , lng , data[i]['latitude'] , data[i]['longitude']) < dd[-1]:
             if _dist(lat , lng , data[i]['latitude'] , data[i]['longitude']) < dd[-2]:
@@ -108,6 +109,9 @@ def _BUS_(lat , lng):
     dd = [INF , INF , INF]
 
     for i in range(len(data)):
+
+        if data[i]['properties']['bsm_chines'] in [data[x]['properties']['bsm_chines'] for x in near]:
+            continue
 
 
         if _dist(lat , lng , data[i]['geometry']['coordinates'][1] , 
