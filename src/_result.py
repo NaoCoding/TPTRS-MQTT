@@ -78,7 +78,7 @@ class Ui_MainWindow(object):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "Taipei Public Transportation Recommendation Service"))
         
-        print(_userSetting._setting._lang)
+        #print(_userSetting._setting._lang)
         
 
         self._crawl = web_crawler._crawl()
